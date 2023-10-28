@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+<style>
+  body {
+    margin: 0;
+    background-color: black;
+  }
+
+  canvas {
+    position: relative;
+  }
+  .score-container{
+    position: fixed;
+    color: white;
+   top: 5px;
+   left:5px;
+   font-size: 36px;
+   display: flex;
+   gap: 3px;
+   user-select: none;
+   
+  }
+
+  .start-game{
+ background-color: white;
+    position: fixed;
+   top: 0;
+   left:0;
+   bottom: 0;
+   right: 0;
+   margin: auto;
+display: flex;
+flex-direction: column;
+   z-index: 3;
+   user-select: none;
+   text-align: center;
+   width: 80%;
+   max-height: 250px;
+   padding: 20px;
+   border-radius: 20px;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin:20px 0 20px 0;
+  }
+  p {
+    color: rgb(68, 65, 65);
+    margin: 0 0 5px 0;
+  }
+  button {
+    width:80%;
+    padding:15px 5px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 30px;
+background-color: rgb(16, 116, 184);  
+  }
+
+ 
+</style>
+
+</head>
+<body>
+<div class="start-game" id="start-game">
+<H1 class="score-p">0</H1>
+<p >points</p>
+<div class="div-btn">
+  <button id="start-btn">Start Game</button>
+</div>
+
+</div>
+
+  <canvas></canvas>
+  <div class="score-container"><span>Score</span>:<span id="score">0</span></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
